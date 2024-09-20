@@ -41,7 +41,7 @@ const config: Config = {
           "18px",
           { fontWeight: 400, lineHeight: "150%", letterSpacing: "0em" },
         ],
-        "bodyM/20x": [
+        "bodyM/20px": [
           "20px",
           { fontWeight: 500, lineHeight: "150%", letterSpacing: "0em" },
         ],
