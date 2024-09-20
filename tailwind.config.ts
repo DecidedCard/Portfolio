@@ -8,9 +8,55 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontSize: {
+        "headingR/24px": [
+          "24px",
+          { fontWeight: 400, lineHeight: "135%", letterSpacing: "-0.02em" },
+        ],
+        "headingR/20px": [
+          "20px",
+          { fontWeight: 400, lineHeight: "135%", letterSpacing: "-0.02em" },
+        ],
+        "headingM/24px": [
+          "24px",
+          { fontWeight: 500, lineHeight: "135%", letterSpacing: "-0.02em" },
+        ],
+        "headingM/20px": [
+          "20px",
+          { fontWeight: 500, lineHeight: "135%", letterSpacing: "-0.02em" },
+        ],
+        "headingB/24px": [
+          "24px",
+          { fontWeight: 600, lineHeight: "135%", letterSpacing: "-0.02em" },
+        ],
+        "headingB/20px": [
+          "20px",
+          { fontWeight: 600, lineHeight: "135%", letterSpacing: "-0.02em" },
+        ],
+        "bodyR/16px": [
+          "16px",
+          { fontWeight: 400, lineHeight: "150%", letterSpacing: "0em" },
+        ],
+        "bodyR/14px": [
+          "14px",
+          { fontWeight: 400, lineHeight: "150%", letterSpacing: "0em" },
+        ],
+        "bodyM/16px": [
+          "16px",
+          { fontWeight: 500, lineHeight: "150%", letterSpacing: "0em" },
+        ],
+        "bodyM/14px": [
+          "14px",
+          { fontWeight: 500, lineHeight: "150%", letterSpacing: "0em" },
+        ],
+        "bodyB/16px": [
+          "16px",
+          { fontWeight: 600, lineHeight: "150%", letterSpacing: "0em" },
+        ],
+        "bodyB/14px": [
+          "14px",
+          { fontWeight: 600, lineHeight: "150%", letterSpacing: "0em" },
+        ],
       },
     },
   },
