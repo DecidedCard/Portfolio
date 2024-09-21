@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="flex justify-center items-center h-[460px] bg-gray-500 text-white">
-      <div className="flex flex-col items-center gap-10 py-16 w-[1440px]">
+    <div className="h-[460px] bg-gray-500 text-white">
+      <div className="flex flex-col items-center gap-10 mx-auto py-16 w-[1440px]">
         <h2 className="text-headingB/32px">About Me</h2>
         <div className="flex gap-24 text-bodyM/20px">
           <div className="flex justify-between gap-5 w-96">
