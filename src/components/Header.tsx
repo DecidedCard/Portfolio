@@ -1,21 +1,45 @@
 import React from "react";
 
-const Header = () => {
+type Props = {
+  onScrollToAboutMe: () => void;
+  onScrollToSkill: () => void;
+  onScrollToArchive: () => void;
+  onScrollToProject: () => void;
+  onScrollToHistory: () => void;
+};
+
+const Header = ({
+  onScrollToAboutMe,
+  onScrollToArchive,
+  onScrollToHistory,
+  onScrollToProject,
+  onScrollToSkill,
+}: Props) => {
   return (
-    <header className="sticky top-0 flex justify-between p-3 w-full h-20 border-b border-solid border-black">
+    <header className="sticky top-0 flex justify-between p-3 w-full h-20 border-b border-solid border-black bg-white">
       <div className="flex justify-between items-center mx-auto min-w-[1440px] max-w-[1440px]">
         <h1 className="text-headingB/32px">portfolio</h1>
-        <div className="flex gap-3 text-headingB/28px">
-          <p className="cursor-pointer">About Me</p>
+        <nav className="flex gap-3 text-headingB/28px">
+          <ol className="cursor-pointer" onClick={onScrollToAboutMe}>
+            About Me
+          </ol>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p className="cursor-pointer">Skill</p>
+          <ol className="cursor-pointer" onClick={onScrollToSkill}>
+            Skill
+          </ol>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p className="cursor-pointer">Archive</p>
+          <ol className="cursor-pointer" onClick={onScrollToArchive}>
+            Archive
+          </ol>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p className="cursor-pointer">Project</p>
+          <ol className="cursor-pointer" onClick={onScrollToProject}>
+            Project
+          </ol>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p className="cursor-pointer">History</p>
-        </div>
+          <ol className="cursor-pointer" onClick={onScrollToHistory}>
+            History
+          </ol>
+        </nav>
       </div>
     </header>
   );
