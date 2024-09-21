@@ -6,15 +6,15 @@ const Header = () => {
       <div className="flex justify-between items-center mx-auto min-w-[1440px] max-w-[1440px]">
         <h1 className="text-headingB/32px">portfolio</h1>
         <div className="flex gap-3 text-headingB/28px">
-          <p>About Me</p>
+          <p className="cursor-pointer">About Me</p>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p>Skill</p>
+          <p className="cursor-pointer">Skill</p>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p>Archive</p>
+          <p className="cursor-pointer">Archive</p>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p>Project</p>
+          <p className="cursor-pointer">Project</p>
           <hr className="mx-1 w-[1px] h-8 bg-black" />
-          <p>History</p>
+          <p className="cursor-pointer">History</p>
         </div>
       </div>
     </header>

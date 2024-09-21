@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${pretendardSans.variable} antialiased`}>
         <Header />
-        <div className="mx-auto min-w-[1440px] max-w-[1440px]">{children}</div>
+        {children}
       </body>
     </html>
   );
