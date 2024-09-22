@@ -5,6 +5,7 @@ import Image from "next/image";
 import html5 from "@/../public/assets/skillImage/HTML5.svg";
 import css3 from "@/../public/assets/skillImage/CSS3.svg";
 import javascript from "@/../public/assets/skillImage/JavaScript.svg";
+import typescript from "@/../public/assets/skillImage/Typescript.svg";
 import react from "@/../public/assets/skillImage/React.svg";
 import nextjs from "@/../public/assets/skillImage/Nextjs.svg";
 import tailwindCSS from "@/../public/assets/skillImage/Tailwind_CSS.svg";
@@ -24,6 +25,7 @@ const Skill = () => {
               <Image src={html5} alt="html5" className="w-40 h-40" />
               <Image src={css3} alt="css3" className="w-40 h-40" />
               <Image src={javascript} alt="css3" className="w-40 h-40" />
+              <Image src={typescript} alt="css3" className="w-40 h-40" />
               <Image src={react} alt="css3" className="w-40 h-40" />
               <Image src={nextjs} alt="css3" className="w-40 h-40" />
               <Image src={tailwindCSS} alt="css3" className="w-40 h-40" />
