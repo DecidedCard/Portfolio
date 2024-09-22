@@ -2,15 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import html5 from "@/../public/assets/skillImage/HTML5.svg";
-import css3 from "@/../public/assets/skillImage/CSS3.svg";
-import javascript from "@/../public/assets/skillImage/JavaScript.svg";
-import typescript from "@/../public/assets/skillImage/Typescript.svg";
-import react from "@/../public/assets/skillImage/React.svg";
-import nextjs from "@/../public/assets/skillImage/Nextjs.svg";
-import tailwindCSS from "@/../public/assets/skillImage/Tailwind_CSS.svg";
-import zustand from "@/../public/assets/skillImage/zustand.svg";
-import reactQuery from "@/../public/assets/skillImage/react-query.svg";
+import { frontEndSkillArr } from "@/util/skill";
 
 const Skill = () => {
   return (
@@ -23,19 +15,16 @@ const Skill = () => {
             <p className="text-bodyM/20px text-black">Front-End</p>
             <hr className="w-full h-[1px] border-0 bg-black" />
             <div className="grid grid-cols-2 gap-3 p-4">
-              <Image src={html5} alt="html5" className="w-40 h-40" />
-              <Image src={css3} alt="css3" className="w-40 h-40" />
-              <Image src={javascript} alt="css3" className="w-40 h-40" />
-              <Image src={typescript} alt="css3" className="w-40 h-40" />
-              <Image src={react} alt="css3" className="w-40 h-40" />
-              <Image src={nextjs} alt="css3" className="w-40 h-40" />
-              <Image src={tailwindCSS} alt="css3" className="w-40 h-40" />
-              <Image src={zustand} alt="css3" className="w-40 h-40" />
-              <Image src={reactQuery} alt="css3" className="w-40 h-40" />
+              {frontEndSkillArr.map((item, idx) => (
+                <div key={idx} className="flex flex-col items-center">
+                  <Image src={item.image} alt="css3" className="w-40 h-40" />
+                  <p className="text-black">{item.text}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="flex flex-col gap-3 p-4 w-96 bg-white rounded-xl">
-            <p className="text-bodyM/20px text-black">Front-End</p>
+            <p className="text-bodyM/20px text-black">Back-End</p>
             <hr className="w-full h-[1px] border-0 bg-black" />
             <div className="grid grid-cols-2 gap-3 p-4"></div>
           </div>
