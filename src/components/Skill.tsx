@@ -10,6 +10,7 @@ import react from "@/../public/assets/skillImage/React.svg";
 import nextjs from "@/../public/assets/skillImage/Nextjs.svg";
 import tailwindCSS from "@/../public/assets/skillImage/Tailwind_CSS.svg";
 import zustand from "@/../public/assets/skillImage/zustand.svg";
+import reactQuery from "@/../public/assets/skillImage/react-query.svg";
 
 const Skill = () => {
   return (
@@ -30,6 +31,7 @@ const Skill = () => {
               <Image src={nextjs} alt="css3" className="w-40 h-40" />
               <Image src={tailwindCSS} alt="css3" className="w-40 h-40" />
               <Image src={zustand} alt="css3" className="w-40 h-40" />
+              <Image src={reactQuery} alt="css3" className="w-40 h-40" />
             </div>
           </div>
           <div className="flex flex-col gap-3 p-4 w-96 bg-white rounded-xl">
