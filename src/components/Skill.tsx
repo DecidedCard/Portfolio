@@ -7,6 +7,7 @@ import {
   backEndSkillArr,
   deploymentArr,
   versionControlArr,
+  communicationArr,
 } from "@/util/skill";
 
 const Skill = () => {
@@ -30,25 +31,42 @@ const Skill = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-3 p-4 w-96 h-fit bg-white rounded-xl">
-            <p className="text-bodyM/20px text-black">Back-End</p>
-            <hr className="w-full h-[1px] border-0 bg-black" />
-            <div className="flex flex-wrap justify-center items-center gap-3 p-4">
-              {backEndSkillArr.map((item, idx) => (
-                <Image
-                  key={idx}
-                  src={item.image}
-                  alt={item.text}
-                  className="w-fit h-32"
-                />
-              ))}
+          <div className="flex flex-col gap-3 ">
+            <div className="flex flex-col gap-3 p-4 w-96 h-fit bg-white rounded-xl">
+              <p className="text-bodyM/20px text-black">Back-End</p>
+              <hr className="w-full h-[1px] border-0 bg-black" />
+              <div className="flex flex-wrap gap-3 p-4">
+                {backEndSkillArr.map((item, idx) => (
+                  <Image
+                    key={idx}
+                    src={item.image}
+                    alt={item.text}
+                    className="w-fit h-32"
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 p-4 w-96 h-fit bg-white rounded-xl">
+              <p className="text-bodyM/20px text-black">Communication</p>
+              <hr className="w-full h-[1px] border-0 bg-black" />
+              <div className="flex flex-wrap justify-center gap-3 p-4">
+                {communicationArr.map((item, idx) => (
+                  <Image
+                    key={idx}
+                    src={item.image}
+                    alt={item.text}
+                    className="w-fit h-20"
+                  />
+                ))}
+              </div>
             </div>
           </div>
+
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-3 p-4 w-96 h-fit bg-white rounded-xl">
               <p className="text-bodyM/20px text-black">Deployment</p>
               <hr className="w-full h-[1px] border-0 bg-black" />
-              <div className="flex flex-wrap justify-center items-center gap-3 p-4">
+              <div className="p-4">
                 {deploymentArr.map((item, idx) => (
                   <Image
                     key={idx}
@@ -62,7 +80,7 @@ const Skill = () => {
             <div className="flex flex-col gap-3 p-4 w-96 h-fit bg-white rounded-xl">
               <p className="text-bodyM/20px text-black">Version Control</p>
               <hr className="w-full h-[1px] border-0 bg-black" />
-              <div className="flex flex-wrap justify-center items-center gap-3 p-4">
+              <div className="flex flex-wrap justify-center items-center gap-5 p-4">
                 {versionControlArr.map((item, idx) => (
                   <Image
                     key={idx}

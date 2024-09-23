@@ -17,6 +17,9 @@ import vercel from "@/../public/assets/skillImage/vercel.svg";
 import git from "@/../public/assets/skillImage/git.svg";
 import github from "@/../public/assets/skillImage/github.svg";
 
+import slack from "@/../public/assets/skillImage/Slack.svg";
+import figma from "@/../public/assets/skillImage/Figma.svg";
+
 export const frontEndSkillArr = [
   { image: html5, text: "HTML5" },
   { image: css3, text: "CSS3" },
@@ -40,4 +43,9 @@ export const deploymentArr = [{ image: vercel, text: "Vercel" }];
 export const versionControlArr = [
   { image: git, text: "Git" },
   { image: github, text: "Github" },
+];
+
+export const communicationArr = [
+  { image: slack, text: "Slack" },
+  { image: figma, text: "Figma" },
 ];
