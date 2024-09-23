@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { frontEndSkillArr } from "@/util/skill";
 
+console.log(frontEndSkillArr);
 const Skill = () => {
   return (
     <div className="flex justify-center items-center py-10 bg-gray-700 text-white">
@@ -14,12 +15,14 @@ const Skill = () => {
           <div className="flex flex-col gap-3 p-4 w-96 bg-white rounded-xl">
             <p className="text-bodyM/20px text-black">Front-End</p>
             <hr className="w-full h-[1px] border-0 bg-black" />
-            <div className="grid grid-cols-2 gap-3 p-4">
+            <div className="flex flex-wrap justify-center items-center gap-3 p-4">
               {frontEndSkillArr.map((item, idx) => (
-                <div key={idx} className="flex flex-col items-center">
-                  <Image src={item.image} alt="css3" className="w-40 h-40" />
-                  <p className="text-black">{item.text}</p>
-                </div>
+                <Image
+                  key={idx}
+                  src={item.image}
+                  alt={item.text}
+                  className="w-fit h-24"
+                />
               ))}
             </div>
           </div>

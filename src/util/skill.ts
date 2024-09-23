@@ -18,6 +18,6 @@ export const frontEndSkillArr = [
   { image: nextjs, text: "Next" },
   { image: tailwindCSS, text: "TailwindCss" },
   { image: zustand, text: "Zustand" },
-  { image: reactQuery, text: "Tanstack/React-Query" },
   { image: reactHookForm, text: "react-hook-form" },
+  { image: reactQuery, text: "Tanstack/React-Query" },
 ];
