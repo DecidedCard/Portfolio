@@ -9,6 +9,14 @@ import zustand from "@/../public/assets/skillImage/zustand.svg";
 import reactQuery from "@/../public/assets/skillImage/react-query.svg";
 import reactHookForm from "@/../public/assets/skillImage/react-hook-form.svg";
 
+import firebase from "@/../public/assets/skillImage/firebase.svg";
+import supabase from "@/../public/assets/skillImage/supabase.svg";
+
+import vercel from "@/../public/assets/skillImage/vercel.svg";
+
+import git from "@/../public/assets/skillImage/git.svg";
+import github from "@/../public/assets/skillImage/github.svg";
+
 export const frontEndSkillArr = [
   { image: html5, text: "HTML5" },
   { image: css3, text: "CSS3" },
@@ -20,4 +28,16 @@ export const frontEndSkillArr = [
   { image: zustand, text: "Zustand" },
   { image: reactHookForm, text: "react-hook-form" },
   { image: reactQuery, text: "Tanstack/React-Query" },
+];
+
+export const backEndSkillArr = [
+  { image: firebase, text: "Firebase" },
+  { image: supabase, text: "Supabase" },
+];
+
+export const deploymentArr = [{ image: vercel, text: "Vercel" }];
+
+export const versionControlArr = [
+  { image: git, text: "Git" },
+  { image: github, text: "Github" },
 ];
