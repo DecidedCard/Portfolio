@@ -7,6 +7,7 @@ import History from "@/components/History";
 import Archive from "@/components/Archive";
 import Project from "@/components/Project";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import useHome from "@/hooks/useHome";
 
@@ -44,6 +45,7 @@ export default function Home() {
       <div ref={historyRef}>
         <History />
       </div>
+      <Footer />
     </div>
   );
 }
