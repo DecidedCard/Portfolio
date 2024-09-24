@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Slider from "./Slider";
 
 const Project = () => {
   return (
@@ -14,8 +15,8 @@ const Project = () => {
           </span>
           <hr className="border-black" />
           <div className="flex gap-5">
-            <div className="w-[400px] h-[500px] border border-solid border-black">
-              이미지 들어갈곳
+            <div className="flex w-[400px] h-[500px]">
+              <Slider />
             </div>
             <hr className="my-auto w-[1px] h-[500px] border-0 bg-black" />
             <div className="flex flex-col gap-3 text-bodyM/18px w-full">
