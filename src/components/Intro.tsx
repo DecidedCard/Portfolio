@@ -4,9 +4,7 @@ const Intro = () => {
   return (
     <section className="h-[460px] bg-primary-100 text-text-200">
       <div className="flex flex-col items-center gap-10 mx-auto py-16 w-[1440px]">
-        <h2 className="w-[750px] h-16 text-center text-headingB/32px">
-          정해준의 포트폴리오
-        </h2>
+        <h2 className="text-center text-headingB/32px">정해준의 포트폴리오</h2>
         <hr className="w-full border-accent-200" />
         <div className="flex flex-col items-center gap-4 text-bodyM/20px">
           <p>안녕하세요 어릴 때 꿈구던 개발자가 되고 싶은 정해준입니다.</p>

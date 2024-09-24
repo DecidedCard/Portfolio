@@ -5,7 +5,7 @@ import Slider from "./Slider";
 const Project = () => {
   return (
     <div className="py-20 bg-primary-200 text-text-200">
-      <div className="flex flex-col gap-4 mx-auto w-[1440px]">
+      <div className="flex flex-col gap-10 mx-auto w-[1440px]">
         <h2 className="text-headingB/28px text-center">PROJECT</h2>
         <hr className="w-full border-text-200" />
         <div className="flex flex-col justify-center gap-3 mx-auto p-4 w-[1000px] bg-accent-200 text-black rounded-xl">

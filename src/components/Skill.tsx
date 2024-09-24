@@ -13,7 +13,7 @@ import {
 const Skill = () => {
   return (
     <div className="py-20 bg-primary-300 text-black">
-      <div className="flex flex-col items-center gap-5 mx-auto w-[1440px]">
+      <div className="flex flex-col items-center gap-10 mx-auto w-[1440px]">
         <h2 className="text-headingB/32px">Skill</h2>
         <hr className="w-full border-black" />
         <div className="flex justify-center gap-4 w-full">

@@ -3,7 +3,7 @@ import React from "react";
 const History = () => {
   return (
     <div className="py-20 h-[460px] bg-primary-300 text-black">
-      <div className="flex flex-col gap-3 mx-auto w-[1440px] h-full">
+      <div className="flex flex-col gap-10 mx-auto w-[1440px] h-full">
         <h2 className="text-headingB/32px text-center">History</h2>
         <hr className="border-black" />
         <div className="flex justify-center gap-5 text-bodyM/20px">

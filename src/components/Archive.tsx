@@ -7,7 +7,7 @@ import velog from "@/../public/assets/skillImage/velog.jpg";
 const Archive = () => {
   return (
     <div className="py-20 bg-primary-100 text-text-200">
-      <div className="flex flex-col gap-5 mx-auto w-[1440px]">
+      <div className="flex flex-col gap-10 mx-auto w-[1440px]">
         <h2 className="text-headingB/32px text-center">ARCHIVING</h2>
         <hr className="w-full border-text-200" />
         <div className="flex justify-center gap-10">
