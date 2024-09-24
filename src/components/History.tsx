@@ -2,8 +2,8 @@ import React from "react";
 
 const History = () => {
   return (
-    <div className="flex justify-center items-center h-[460px] bg-gray-600 text-white">
-      <div className="flex flex-col gap-3 p-4 w-[1440px] h-full">
+    <div className="py-20 h-[460px] bg-gray-600 text-white">
+      <div className="flex flex-col gap-3 mx-auto w-[1440px] h-full">
         <h2 className="text-headingB/32px text-center">History</h2>
         <hr />
         <div className="flex justify-center gap-5">

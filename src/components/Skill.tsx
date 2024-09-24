@@ -12,8 +12,8 @@ import {
 
 const Skill = () => {
   return (
-    <div className="flex justify-center items-center py-10 bg-primary-300 text-text-100">
-      <div className="flex flex-col items-center gap-5 w-[1440px]">
+    <div className="py-20 bg-primary-300 text-text-100">
+      <div className="flex flex-col items-center gap-5 mx-auto w-[1440px]">
         <h2 className="text-headingB/32px">Skill</h2>
         <hr className="w-full border-accent-200" />
         <div className="flex justify-center gap-4 w-full">

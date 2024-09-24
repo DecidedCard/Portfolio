@@ -4,7 +4,7 @@ import Slider from "./Slider";
 
 const Project = () => {
   return (
-    <div className="flex justify-center items-center p-20 bg-primary-200 text-text-200">
+    <div className="py-20 bg-primary-200 text-text-200">
       <div className="flex flex-col gap-4 mx-auto w-[1440px]">
         <h2 className="text-headingB/28px text-center">PROJECT</h2>
         <hr className="w-full border-text-200" />
