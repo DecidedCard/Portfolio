@@ -20,8 +20,8 @@ const Header = ({
       <div className="flex justify-between items-center mx-auto min-w-[1440px] max-w-[1440px] text-text-200">
         <h1 className="text-headingB/32px">portfolio</h1>
         <nav className="flex gap-3 text-headingB/28px">
-          <ol className="cursor-pointer" onClick={onScrollToAboutMe}>
-            About Me
+          <ol className="cursor-pointer" onClick={onScrollToProject}>
+            Project
           </ol>
           <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
           <ol className="cursor-pointer" onClick={onScrollToSkill}>
@@ -32,12 +32,12 @@ const Header = ({
             Archive
           </ol>
           <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
-          <ol className="cursor-pointer" onClick={onScrollToProject}>
-            Project
-          </ol>
-          <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
           <ol className="cursor-pointer" onClick={onScrollToHistory}>
             History
+          </ol>
+          <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
+          <ol className="cursor-pointer" onClick={onScrollToAboutMe}>
+            About Me
           </ol>
         </nav>
       </div>
