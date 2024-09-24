@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <section className="h-[460px] bg-primary-100 text-text-200">
       <div className="flex flex-col items-center gap-10 mx-auto py-16 w-[1440px]">
-        <h2 className="text-headingB/32px">{title}</h2>
+        <h2 className="h-[43px] text-headingB/32px">{title}</h2>
         <hr className="w-full border-accent-200" />
         <div className="flex flex-col gap-4 text-bodyM/20px">
           <p>{comment1}</p>
