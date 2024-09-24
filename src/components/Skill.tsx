@@ -12,10 +12,10 @@ import {
 
 const Skill = () => {
   return (
-    <div className="py-20 bg-primary-300 text-text-100">
+    <div className="py-20 bg-primary-300 text-black">
       <div className="flex flex-col items-center gap-5 mx-auto w-[1440px]">
         <h2 className="text-headingB/32px">Skill</h2>
-        <hr className="w-full border-accent-200" />
+        <hr className="w-full border-black" />
         <div className="flex justify-center gap-4 w-full">
           <div className="flex flex-col gap-3 p-4 w-96 bg-accent-200 rounded-xl duration-300 hover:scale-105">
             <p className="text-bodyB/20px text-black">Front-End</p>
