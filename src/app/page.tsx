@@ -30,8 +30,8 @@ export default function Home() {
         onScrollToHistory={() => handleScrollTo(historyRef)}
       />
       <Intro />
-      <div ref={aboutMeRef}>
-        <AboutMe />
+      <div ref={projectRef}>
+        <Project />
       </div>
       <div ref={skillRef}>
         <Skill />
@@ -39,11 +39,11 @@ export default function Home() {
       <div ref={archiveRef}>
         <Archive />
       </div>
-      <div ref={projectRef}>
-        <Project />
-      </div>
       <div ref={historyRef}>
         <History />
+      </div>
+      <div ref={aboutMeRef}>
+        <AboutMe />
       </div>
       <Footer />
     </div>

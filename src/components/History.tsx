@@ -2,12 +2,12 @@ import React from "react";
 
 const History = () => {
   return (
-    <div className="py-20 h-fit bg-primary-300 text-black">
+    <div className="py-20 h-fit bg-primary-200 text-text-200">
       <div className="flex flex-col gap-10 mx-auto w-[1440px] h-full">
         <h2 className="text-headingB/32px text-center">HISTORY</h2>
-        <hr className="border-black" />
+        <hr className="border-text-200" />
         <div className="flex justify-center gap-10">
-          <hr className="w-[1px] h-[480px] border-0 bg-black" />
+          <hr className="w-[1px] h-[480px] border-0 bg-text-200" />
           <div className="flex flex-col gap-5">
             <div className="flex justify-center gap-5 w-[550px] text-bodyM/20px">
               <div className="w-fit">
