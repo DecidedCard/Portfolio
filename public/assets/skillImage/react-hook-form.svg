@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" xmlns:v="https://vecta.io/nano">
 <g fill-rule="evenodd">
-<path fill="#fff" d="M0 0h1200v630H0z"/>
+<path fill="#ffecda" d="M0 0h1200v630H0z"/>
 <text font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="67" font-weight="bold" fill="#000">
 <tspan x="319.002" y="432">React Hook Form</tspan>
 </text>
