@@ -20,7 +20,7 @@ export default function Home() {
     skillRef,
   } = useHome();
   return (
-    <div>
+    <div className="bg-bg-100">
       <Header
         onScrollToAboutMe={() => handleScrollTo(aboutMeRef)}
         onScrollToSkill={() => handleScrollTo(skillRef)}
