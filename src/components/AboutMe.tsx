@@ -23,10 +23,12 @@ const AboutMe = () => {
             <div className="flex flex-col gap-5">
               <p>생년월일</p>
               <p>연락처</p>
+              <p>학력</p>
             </div>
             <div className="flex flex-col gap-5">
               <p>02.12.07</p>
               <p>010-2433-3987</p>
+              <p>청주공업고등학교</p>
             </div>
           </div>
         </div>
