@@ -21,23 +21,23 @@ const Header = ({
         <h1 className="text-headingB/32px">portfolio</h1>
         <nav className="flex gap-3 text-headingB/28px">
           <ol className="cursor-pointer" onClick={onScrollToProject}>
-            Project
+            PROJECT
           </ol>
           <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
           <ol className="cursor-pointer" onClick={onScrollToSkill}>
-            Skill
+            SKILL
           </ol>
           <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
           <ol className="cursor-pointer" onClick={onScrollToArchive}>
-            Archive
+            ARCHIVING
           </ol>
           <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
           <ol className="cursor-pointer" onClick={onScrollToHistory}>
-            History
+            HISTORY
           </ol>
           <hr className="mx-1 w-[1px] h-8 border-0 bg-text-200" />
           <ol className="cursor-pointer" onClick={onScrollToAboutMe}>
-            About Me
+            ABOUT ME
           </ol>
         </nav>
       </div>
