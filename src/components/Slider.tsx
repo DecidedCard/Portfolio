@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+
 import porifo1 from "@/../public/assets/projectImage/porifo1.png";
 import porifo2 from "@/../public/assets/projectImage/porifo2.png";
 import porifo3 from "@/../public/assets/projectImage/porifo3.png";
@@ -34,9 +37,13 @@ const Slider = () => {
           ))}
         </div>
       </div>
-      <div className="flex gap-5 text-bodyB/20px mt-4">
-        <button onClick={prevImage}>{"<"}</button>
-        <button onClick={nextImage}>{">"}</button>
+      <div className="flex gap-10 text-bodyB/20px mt-4">
+        <button onClick={prevImage}>
+          <IoIosArrowBack className="w-8 h-8" />
+        </button>
+        <button onClick={nextImage}>
+          <IoIosArrowForward className="w-8 h-8" />
+        </button>
       </div>
     </div>
   );
