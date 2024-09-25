@@ -60,6 +60,7 @@ const Slider = () => {
       </div>
       {isModal && (
         <ImageModal
+          isModal={isModal}
           image={images[currentIndex]}
           onClickModalToggleHandler={onClickModalToggleHandler}
         />
