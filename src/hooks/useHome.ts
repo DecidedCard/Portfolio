@@ -1,6 +1,7 @@
 import { MutableRefObject, useRef } from "react";
 
 const useHome = () => {
+  const introRef = useRef<HTMLDivElement | null>(null);
   const aboutMeRef = useRef<HTMLDivElement | null>(null);
   const skillRef = useRef<HTMLDivElement | null>(null);
   const archiveRef = useRef<HTMLDivElement | null>(null);
@@ -12,6 +13,7 @@ const useHome = () => {
   };
 
   return {
+    introRef,
     aboutMeRef,
     skillRef,
     archiveRef,

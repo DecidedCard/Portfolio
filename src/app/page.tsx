@@ -13,6 +13,7 @@ import useHome from "@/hooks/useHome";
 
 export default function Home() {
   const {
+    introRef,
     aboutMeRef,
     archiveRef,
     handleScrollTo,
@@ -23,13 +24,16 @@ export default function Home() {
   return (
     <div className="bg-bg-100">
       <Header
+        onScrollToIntro={() => handleScrollTo(introRef)}
         onScrollToAboutMe={() => handleScrollTo(aboutMeRef)}
         onScrollToSkill={() => handleScrollTo(skillRef)}
         onScrollToArchive={() => handleScrollTo(archiveRef)}
         onScrollToProject={() => handleScrollTo(projectRef)}
         onScrollToHistory={() => handleScrollTo(historyRef)}
       />
-      <Intro />
+      <div ref={introRef}>
+        <Intro />
+      </div>
       <div ref={projectRef}>
         <Project />
       </div>
