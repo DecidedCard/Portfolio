@@ -2,10 +2,10 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="py-20 h-[460px] bg-primary-300 text-black">
+    <div className="py-20 h-[460px] bg-primary-300 text-white">
       <div className="flex flex-col items-center gap-10 mx-auto w-[1440px]">
         <h2 className="text-headingB/32px">ABOUT ME</h2>
-        <hr className="w-full border-black" />
+        <hr className="w-full border-white" />
         <div className="flex gap-24 text-bodyM/20px">
           <div className="flex justify-between gap-5 w-96">
             <div className="flex flex-col gap-5">

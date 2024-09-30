@@ -62,11 +62,11 @@ const config: Config = {
         primary: {
           100: "#2C3A4F",
           200: "#56647b",
-          300: "#b4c2dc",
+          300: "b4c2dc#",
         },
         accent: {
           100: "#FF4D4D",
-          200: "#ffecda",
+          200: "#f5f5f5",
         },
         text: {
           100: "#FFFFFF",
