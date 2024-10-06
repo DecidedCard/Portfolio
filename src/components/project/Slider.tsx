@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import porifo1 from "@/../public/assets/projectImage/porifo1.png";
 import porifo2 from "@/../public/assets/projectImage/porifo2.png";
 import porifo3 from "@/../public/assets/projectImage/porifo3.png";
-import ImageModal from "./modal/ImageModal";
+import ImageModal from "../modal/ImageModal";
 
 const Slider = () => {
   // 이미지 배열과 현재 인덱스를 상태로 관리

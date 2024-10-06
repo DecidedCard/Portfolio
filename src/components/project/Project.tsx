@@ -1,5 +1,6 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+
 import Slider from "./Slider";
 
 const Project = () => {
@@ -53,13 +54,10 @@ const Project = () => {
                     supabase DB와 로컬스토리지를 사용하여 로그인 유저와 비로그인
                     유저를 구분하여 저장하도록 구현.
                   </p>
-                  <p>작성한 데이터를 가져와서 다시 수정할 수 있도록 구현.</p>
+                  <p>이력서 CRUD 구현</p>
                   <p>
                     route handler를 사용하여 지정한 요청만 수행할 수 있도록
                     구현.
-                  </p>
-                  <p>
-                    로그인을 server를 활용할 수 있게 구현하여 보안성을 향상.
                   </p>
                 </span>
               </ol>

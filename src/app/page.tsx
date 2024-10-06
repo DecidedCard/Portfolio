@@ -5,7 +5,7 @@ import AboutMe from "@/components/AboutMe";
 import Skill from "@/components/Skill";
 import History from "@/components/History";
 import Archive from "@/components/Archive";
-import Project from "@/components/Project";
+import Project from "@/components/project/Project";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
