@@ -4,17 +4,19 @@ import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
+import ImageModal from "../modal/ImageModal";
+import useModalToggle from "@/hooks/useModalToggle";
+
 import porifo1 from "@/../public/assets/projectImage/porifo1.png";
 import porifo2 from "@/../public/assets/projectImage/porifo2.png";
 import porifo3 from "@/../public/assets/projectImage/porifo3.png";
-import ImageModal from "../modal/ImageModal";
 
 const Slider = () => {
-  // 이미지 배열과 현재 인덱스를 상태로 관리
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isModal, setIsModal] = useState(false);
+  const { isModal, onClickIsModalToggleHandler } = useModalToggle();
 
-  const images = [porifo1, porifo2, porifo3]; // 이미지 배열
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [porifo1, porifo2, porifo3];
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) =>
@@ -26,10 +28,6 @@ const Slider = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
-  };
-
-  const onClickModalToggleHandler = () => {
-    setIsModal(!isModal);
   };
 
   return (
@@ -44,7 +42,7 @@ const Slider = () => {
               key={index}
               src={image}
               alt={`프로젝트 ${index}`}
-              onClick={onClickModalToggleHandler}
+              onClick={onClickIsModalToggleHandler}
               className="cursor-pointer"
             />
           ))}
@@ -62,7 +60,7 @@ const Slider = () => {
         <ImageModal
           isModal={isModal}
           image={images[currentIndex]}
-          onClickModalToggleHandler={onClickModalToggleHandler}
+          onClickModalToggleHandler={onClickIsModalToggleHandler}
         />
       )}
     </div>

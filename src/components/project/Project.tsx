@@ -2,8 +2,11 @@ import React from "react";
 import Link from "next/link";
 
 import Slider from "./Slider";
+import MarkdownModal from "../modal/MarkdownModal";
+import useModalToggle from "@/hooks/useModalToggle";
 
 const Project = () => {
+  const { isModal, onClickIsModalToggleHandler } = useModalToggle();
   return (
     <div className="py-20 bg-primary-200 text-text-200">
       <div className="flex flex-col gap-10 mx-auto w-[1440px]">
@@ -89,10 +92,17 @@ const Project = () => {
                   </Link>
                 </span>
               </ol>
+              <button
+                onClick={onClickIsModalToggleHandler}
+                className="ml-4 p-2 w-fit border border-solid border-black rounded-lg"
+              >
+                README
+              </button>
             </div>
           </div>
         </div>
       </div>
+      {isModal && <MarkdownModal />}
     </div>
   );
 };
