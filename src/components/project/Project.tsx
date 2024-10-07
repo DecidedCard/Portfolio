@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import Slider from "./Slider";
 import MarkdownModal from "../modal/MarkdownModal";
+
 import useModalToggle from "@/hooks/useModalToggle";
 
 const Project = () => {
   const { isModal, onClickIsModalToggleHandler } = useModalToggle();
+
   return (
     <div className="py-20 bg-primary-200 text-text-200">
       <div className="flex flex-col gap-10 mx-auto w-[1440px]">
@@ -102,7 +104,12 @@ const Project = () => {
           </div>
         </div>
       </div>
-      {isModal && <MarkdownModal />}
+      {isModal && (
+        <MarkdownModal
+          isModal={isModal}
+          onClickIsModalToggleHandler={onClickIsModalToggleHandler}
+        />
+      )}
     </div>
   );
 };
