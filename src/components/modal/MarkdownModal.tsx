@@ -3,6 +3,7 @@
 import React from "react";
 
 import MDEditor from "@uiw/react-md-editor";
+import { IoClose } from "react-icons/io5";
 
 import useScrollStop from "@/hooks/useScrollStop";
 
@@ -24,6 +25,10 @@ const MarkdownModal = ({ isModal, onClickIsModalToggleHandler }: Props) => {
 
   return (
     <div className="fixed top-0 left-0 bottom-0 right-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-95">
+      <IoClose
+        onClick={onClickIsModalToggleHandler}
+        className="absolute top-4 left-4 w-10 h-10 cursor-pointer"
+      />
       <div ref={modalRef}>
         <MDEditor.Markdown
           source={porifoMD}
