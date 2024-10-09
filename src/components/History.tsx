@@ -25,9 +25,15 @@ const History = () => {
               <div className="w-fit">
                 <p className="text-headingB/28px">실버링</p>
                 <p className="text-gray-400">인턴/2024.08 ~ 2024.08</p>
-                <p>
-                  크레딧가드라는 이름의 부동산 관리 페이지의 mvp를
-                  제작하였습니다.
+                <p className="flex flex-col">
+                  <span>
+                    크레딧가드라는 이름의 부동산 관리 모바일 웹 페이지의 mvp를
+                    제작하였습니다.
+                  </span>
+                  <span>
+                    react-hook-form을 사용하여 계약서 작성 및 로그인/회원가입의
+                    입력 폼을 작성하였습니다.
+                  </span>
                 </p>
                 <li>로그인/회원가입 및 임대인/임차인 구분 구현</li>
                 <li>계약서 CRUD 구현</li>

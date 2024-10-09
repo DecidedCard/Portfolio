@@ -23,7 +23,7 @@ const Archive = () => {
             <p className="text-bodyM/20px">소스코드 저장소 입니다.</p>
             <div className="-indent-6 ml-6">
               <li>공부하면서 작성했던 소스코드</li>
-              <li>참여했던 프로젝트 소스코드</li>
+              <li>프로젝트 소스코드</li>
             </div>
           </Link>
           <Link
@@ -40,7 +40,7 @@ const Archive = () => {
             </p>
             <div className="-indent-6 ml-6">
               <li>공부하였던 것들을 정리하는 곳</li>
-              <li>개발하면서 느꼈던 것들을 정히한 곳</li>
+              <li>개발하면서 느꼈던 것들을 정리한 곳</li>
             </div>
           </Link>
         </div>
