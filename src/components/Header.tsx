@@ -24,7 +24,7 @@ const Header = ({
           onClick={onScrollToIntro}
           className="text-headingB/32px cursor-pointer"
         >
-          portfolio
+          Portfolio
         </h1>
         <nav className="flex gap-3 text-headingB/28px">
           <ol onClick={onScrollToProject} className="cursor-pointer">
