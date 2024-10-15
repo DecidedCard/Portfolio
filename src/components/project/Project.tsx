@@ -12,11 +12,11 @@ const Project = () => {
   return (
     <div className="py-20 bg-primary-200 text-text-200">
       <div className="flex flex-col gap-10 mx-auto w-[1440px]">
-        <h2 className="text-headingB/28px text-center">PROJECT</h2>
+        <h2 className="text-title/40px text-center">PROJECT</h2>
         <hr className="w-full border-text-200" />
         <div className="flex flex-col justify-center gap-3 mx-auto p-4 w-[1000px] bg-accent-200 text-black rounded-xl">
-          <p className="text-bodyB/20px text-center">Porifo</p>
-          <span className="text-bodyR/18px text-gray-400 text-center">
+          <p className="text-body/26px text-center">Porifo</p>
+          <span className="text-body/18px text-gray-400 text-center">
             2024.04 ~ 2024.05
           </span>
           <hr className="border-black" />
@@ -25,7 +25,7 @@ const Project = () => {
               <Slider />
             </div>
             <hr className="my-auto w-[1px] h-[500px] border-0 bg-black" />
-            <div className="flex flex-col gap-3 text-bodyM/18px w-full">
+            <div className="flex flex-col gap-3 text-body/18px w-full">
               <ol className="flex justify-between w-full">
                 <span className="w-[120px] text-end whitespace-nowrap">
                   프로젝트 소개:

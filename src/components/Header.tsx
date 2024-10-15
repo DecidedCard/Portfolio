@@ -18,15 +18,15 @@ const Header = ({
   onScrollToSkill,
 }: Props) => {
   return (
-    <header className="sticky top-0 z-10 flex justify-between p-3 w-full h-20 bg-bg-300">
+    <header className="sticky top-0 z-10 flex justify-between p-4 w-full h-20 bg-bg-300">
       <div className="flex justify-between items-center mx-auto min-w-[1440px] max-w-[1440px] text-text-200">
         <h1
           onClick={onScrollToIntro}
-          className="text-headingB/32px cursor-pointer"
+          className="text-title/48px cursor-pointer"
         >
-          portfolio
+          Portfolio
         </h1>
-        <nav className="flex gap-3 text-headingB/28px">
+        <nav className="flex gap-3 text-title/24px">
           <ol onClick={onScrollToProject} className="cursor-pointer">
             PROJECT
           </ol>

@@ -9,54 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        "headingR/32px": [
-          "32px",
-          { fontWeight: 400, lineHeight: "135%", letterSpacing: "-0.02em" },
-        ],
-        "headingR/28px": [
-          "28px",
-          { fontWeight: 400, lineHeight: "135%", letterSpacing: "-0.02em" },
-        ],
-        "headingM/32px": [
-          "32px",
-          { fontWeight: 500, lineHeight: "135%", letterSpacing: "-0.02em" },
-        ],
-        "headingM/28px": [
-          "28px",
-          { fontWeight: 500, lineHeight: "135%", letterSpacing: "-0.02em" },
-        ],
-        "headingB/32px": [
-          "32px",
-          { fontWeight: 600, lineHeight: "135%", letterSpacing: "-0.02em" },
-        ],
-        "headingB/28px": [
-          "28px",
-          { fontWeight: 600, lineHeight: "135%", letterSpacing: "-0.02em" },
-        ],
-        "bodyR/20px": [
-          "20px",
-          { fontWeight: 400, lineHeight: "150%", letterSpacing: "0em" },
-        ],
-        "bodyR/18px": [
-          "18px",
-          { fontWeight: 400, lineHeight: "150%", letterSpacing: "0em" },
-        ],
-        "bodyM/20px": [
-          "20px",
-          { fontWeight: 500, lineHeight: "150%", letterSpacing: "0em" },
-        ],
-        "bodyM/18px": [
-          "18px",
-          { fontWeight: 500, lineHeight: "150%", letterSpacing: "0em" },
-        ],
-        "bodyB/20px": [
-          "20px",
-          { fontWeight: 600, lineHeight: "150%", letterSpacing: "0em" },
-        ],
-        "bodyB/18px": [
-          "18px",
-          { fontWeight: 600, lineHeight: "150%", letterSpacing: "0em" },
-        ],
+        "title/24px": ["24px", { lineHeight: "110%", fontWeight: "700" }],
+        "title/28px": ["28px", { lineHeight: "110%", fontWeight: "700" }],
+        "title/32px": ["32px", { lineHeight: "110%", fontWeight: "700" }],
+        "title/40px": ["40px", { lineHeight: "110%", fontWeight: "700" }],
+        "title/48px": ["48px", { lineHeight: "110%", fontWeight: "700" }],
+        "body/10px": ["10px", { lineHeight: "100%", fontWeight: "400" }],
+        "body/14px": ["14px", { lineHeight: "100%", fontWeight: "400" }],
+        "body/18px": ["18px", { lineHeight: "100%", fontWeight: "400" }],
+        "body/22px": ["22px", { lineHeight: "100%", fontWeight: "400" }],
+        "body/26px": ["26px", { lineHeight: "100%", fontWeight: "400" }],
       },
       colors: {
         primary: {
