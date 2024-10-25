@@ -6,6 +6,8 @@ import MarkdownModal from "../modal/MarkdownModal";
 
 import useModalToggle from "@/hooks/useModalToggle";
 
+import { GG_MD } from "@/util/project-readMe/GG";
+
 import GGImage1 from "@/../public/assets/projectImage/GG_main_page.png";
 import GGImage2 from "@/../public/assets/projectImage/GG_maple_main_page.png";
 import GGImage3 from "@/../public/assets/projectImage/GG_maple_result_page.png";
@@ -107,6 +109,7 @@ const GoodGame = () => {
       </div>
       {isModal && (
         <MarkdownModal
+          markdown={GG_MD}
           isModal={isModal}
           onClickIsModalToggleHandler={onClickIsModalToggleHandler}
         />

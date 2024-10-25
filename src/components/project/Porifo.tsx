@@ -6,6 +6,8 @@ import MarkdownModal from "../modal/MarkdownModal";
 
 import useModalToggle from "@/hooks/useModalToggle";
 
+import { porifoMD } from "@/util/project-readMe/porifo";
+
 import porifo1 from "@/../public/assets/projectImage/porifo1.png";
 import porifo2 from "@/../public/assets/projectImage/porifo2.png";
 import porifo3 from "@/../public/assets/projectImage/porifo3.png";
@@ -103,6 +105,7 @@ const Porifo = () => {
       </div>
       {isModal && (
         <MarkdownModal
+          markdown={porifoMD}
           isModal={isModal}
           onClickIsModalToggleHandler={onClickIsModalToggleHandler}
         />

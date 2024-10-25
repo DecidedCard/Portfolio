@@ -7,15 +7,19 @@ import { IoClose } from "react-icons/io5";
 
 import useScrollStop from "@/hooks/useScrollStop";
 
-import { porifoMD } from "@/util/project-readMe/porifo";
 import useModalClose from "@/hooks/useModalClose";
 
 type Props = {
+  markdown: string;
   isModal: boolean;
   onClickIsModalToggleHandler: () => void;
 };
 
-const MarkdownModal = ({ isModal, onClickIsModalToggleHandler }: Props) => {
+const MarkdownModal = ({
+  markdown,
+  isModal,
+  onClickIsModalToggleHandler,
+}: Props) => {
   const { modalRef } = useModalClose({
     isModal,
     onClose: onClickIsModalToggleHandler,
@@ -31,7 +35,7 @@ const MarkdownModal = ({ isModal, onClickIsModalToggleHandler }: Props) => {
       />
       <div ref={modalRef}>
         <MDEditor.Markdown
-          source={porifoMD}
+          source={markdown}
           className="p-3 w-[1100px] h-[800px] overflow-scroll rounded-md"
         />
       </div>
