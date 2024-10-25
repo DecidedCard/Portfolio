@@ -12,7 +12,7 @@ const Intro = () => {
           <hr className="w-full border-accent-200" />
         </div>
 
-        <div className="flex flex-col gap-4 text-body/26px">
+        <div className="flex flex-col items-center gap-4 text-body/26px">
           <p>{comment1}</p>
           <p>{comment2}</p>
           <p>{comment3}</p>
