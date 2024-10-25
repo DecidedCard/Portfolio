@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -7,16 +7,10 @@ import { IoIosArrowForward } from "react-icons/io";
 import ImageModal from "../modal/ImageModal";
 import useModalToggle from "@/hooks/useModalToggle";
 
-import porifo1 from "@/../public/assets/projectImage/porifo1.png";
-import porifo2 from "@/../public/assets/projectImage/porifo2.png";
-import porifo3 from "@/../public/assets/projectImage/porifo3.png";
-
-const Slider = () => {
+const Slider = ({ images }: { images: StaticImageData[] }) => {
   const { isModal, onClickIsModalToggleHandler } = useModalToggle();
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const images = [porifo1, porifo2, porifo3];
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) =>

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Porifo from "./Porifo";
+import GoodGame from "./GoodGame";
 
 const Project = () => {
   return (
@@ -9,6 +10,7 @@ const Project = () => {
         <h2 className="text-title/40px text-center">PROJECT</h2>
         <hr className="w-full border-text-200" />
         <Porifo />
+        <GoodGame />
       </div>
     </div>
   );

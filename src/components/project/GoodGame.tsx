@@ -6,25 +6,25 @@ import MarkdownModal from "../modal/MarkdownModal";
 
 import useModalToggle from "@/hooks/useModalToggle";
 
-import porifo1 from "@/../public/assets/projectImage/porifo1.png";
-import porifo2 from "@/../public/assets/projectImage/porifo2.png";
-import porifo3 from "@/../public/assets/projectImage/porifo3.png";
+import GGImage1 from "@/../public/assets/projectImage/GG_main_page.png";
+import GGImage2 from "@/../public/assets/projectImage/GG_maple_main_page.png";
+import GGImage3 from "@/../public/assets/projectImage/GG_maple_result_page.png";
+import GGImage4 from "@/../public/assets/projectImage/GG_maple_result_page2.png";
+import GGImage5 from "@/../public/assets/projectImage/GG_maple_result_page3.png";
 
-const Porifo = () => {
+const GoodGame = () => {
   const { isModal, onClickIsModalToggleHandler } = useModalToggle();
-
-  const images = [porifo1, porifo2, porifo3];
 
   return (
     <div className="flex flex-col justify-center gap-3 mx-auto p-4 w-[1000px] bg-accent-200 text-black rounded-xl">
-      <p className="text-body/26px text-center">Porifo</p>
+      <p className="text-body/26px text-center">GG(good-game)</p>
       <span className="text-body/18px text-gray-400 text-center">
-        2024.04 ~ 2024.05
+        2024.10 ~ 2024.10
       </span>
       <hr className="border-black" />
       <div className="relative flex gap-5">
         <div className="flex w-[400px] h-[500px]">
-          <Slider images={images} />
+          <Slider images={[GGImage1, GGImage2, GGImage3, GGImage4, GGImage5]} />
         </div>
         <hr className="my-auto w-[1px] h-[500px] border-0 bg-black" />
         <div className="flex flex-col gap-3 text-body/18px w-full">
@@ -42,27 +42,31 @@ const Porifo = () => {
               기술 스택:
             </span>
             <span className="w-[500px]">
-              Next.js, TypeScript, tailwindcss, zustand, Tanstack Query,
-              supabase
+              Next.js, TypeScript, tailwindcss, zustand, Tanstack Query
             </span>
           </ol>
           <ol className="flex justify-between">
             <span className="w-[120px] text-end whitespace-nowrap">
               팀 구성:
             </span>
-            <span className="w-[500px]">프론트엔드: 4명, 디자인: 1명</span>
+            <span className="w-[500px]">개인프로젝트</span>
           </ol>
           <ol className="flex justify-between">
             <span className="w-[120px] text-end whitespace-nowrap">
               기능 구현:
             </span>
             <span className="flex flex-col gap-3 w-[500px]">
-              <p> - Supabase를 사용하여 Oauth 및 이메일 로그인/회원가입 구현</p>
-              <p> - 이력서 작성 및 수정할 수 있는 작성 페이지 구현</p>
               <p>
-                - 이력서 공유시 피드백을 받고 공유한 것을 확인할 수 있는
-                커뮤니티 페이지 구현
+                {" "}
+                - 넥슨 오픈 API를 이용하여 메이플스토리라는 게임의 데이터를
+                가져와서 구현
               </p>
+              <p> - 랭킹 정보를 가져와서 랭킹을 확인할 수 있는 페이지 구현</p>
+              <p>
+                - 캐릭터를 검색하여 캐릭터의 스탯 및 아이템 등을 확인할 수 있는
+                페이지 구현
+              </p>
+              <p>- 모바일 환경을 고려하여 반응형 디자인 구현</p>
             </span>
           </ol>
           <ol className="flex justify-between">
@@ -71,11 +75,11 @@ const Porifo = () => {
             </span>
             <span className="w-[500px]">
               <Link
-                href={"https://www.porifo.com/"}
+                href={"https://gg-ashen-five.vercel.app/"}
                 target="blank"
                 className="cursor-pointer underline"
               >
-                https://www.porifo.com/
+                https://gg-ashen-five.vercel.app/
               </Link>
             </span>
           </ol>
@@ -85,11 +89,11 @@ const Porifo = () => {
             </span>
             <span className="w-[500px]">
               <Link
-                href={"https://github.com/DecidedCard/Porifo"}
+                href={"https://github.com/DecidedCard/GG"}
                 target="blank"
                 className="cursor-pointer underline"
               >
-                https://github.com/DecidedCard/Porifo
+                https://github.com/DecidedCard/GG
               </Link>
             </span>
           </ol>
@@ -111,4 +115,4 @@ const Porifo = () => {
   );
 };
 
-export default Porifo;
+export default GoodGame;
