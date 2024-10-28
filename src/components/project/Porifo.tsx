@@ -25,13 +25,13 @@ const Porifo = () => {
       </span>
       <hr className="border-black" />
       <div className="relative flex gap-5">
-        <div className="flex w-[400px] h-[500px]">
+        <div className="flex my-auto w-[400px] h-[500px]">
           <Slider images={images} />
         </div>
-        <hr className="my-auto w-[1px] h-[500px] border-0 bg-black" />
+        <hr className="my-auto w-[1px] h-[800px] border-0 bg-black" />
         <div className="flex flex-col gap-3 text-body/18px w-full">
           <ol className="flex justify-between w-full">
-            <span className="w-[120px] text-end whitespace-nowrap">
+            <span className="w-[120px] text-title/20px text-end whitespace-nowrap">
               프로젝트 소개:
             </span>
             <span className="w-[500px]">
@@ -40,7 +40,7 @@ const Porifo = () => {
             </span>
           </ol>
           <ol className="flex justify-between">
-            <span className="w-[120px] text-end whitespace-nowrap">
+            <span className="w-[120px] text-title/20px text-end whitespace-nowrap">
               기술 스택:
             </span>
             <span className="w-[500px]">
@@ -49,13 +49,13 @@ const Porifo = () => {
             </span>
           </ol>
           <ol className="flex justify-between">
-            <span className="w-[120px] text-end whitespace-nowrap">
+            <span className="w-[120px] text-title/20px text-end whitespace-nowrap">
               팀 구성:
             </span>
             <span className="w-[500px]">프론트엔드: 4명, 디자인: 1명</span>
           </ol>
           <ol className="flex justify-between">
-            <span className="w-[120px] text-end whitespace-nowrap">
+            <span className="w-[120px] text-title/20px text-end whitespace-nowrap">
               기능 구현:
             </span>
             <span className="flex flex-col gap-3 w-[500px]">
@@ -68,7 +68,50 @@ const Porifo = () => {
             </span>
           </ol>
           <ol className="flex justify-between">
-            <span className="w-[120px] text-end whitespace-nowrap">
+            <span className="w-[120px] text-title/20px text-end whitespace-nowrap">
+              트러블 슈팅:
+            </span>
+            <span className="flex flex-col gap-3 w-[500px]">
+              <span className="flex flex-col gap-1">
+                <span>
+                  <span className="text-title/16px">문제</span>: resend라는
+                  메일을 보내는 서비스를 이용하는 중에 도메인 인증이 되어야
+                  서비스를 사용할 수 있었는데 도메인 인증이 되지 않는 문제가
+                  발생하였습니다.
+                </span>
+                <span>
+                  <span className="text-title/16px">문제원인</span>: 도메인
+                  설정을 해줘야 하는데 처음 이용하는 서비스라 정확히 어떤걸
+                  해줘야 하는지 파악하지 못 해 발생한 문제였습니다.
+                </span>
+                <span>
+                  <span className="text-title/16px">해결방법</span>: resend에서
+                  알려주는 세팅을 해서 인증을 할 수 있게 되었습니다..
+                </span>
+              </span>
+              <span className="flex flex-col gap-1">
+                <span>
+                  <span className="text-title/16px">문제</span>: 작성한 데이터를
+                  가져와서 수정하는 과정에서 데이터를 가져오고 데이터가 있으면
+                  그걸로 값을 세팅하는 과정에서 무한렌더링이 걸리는 오류가
+                  발생했습니다.
+                </span>
+                <span>
+                  <span className="text-title/16px">문제원인</span>: 유저 정보를
+                  기반으로 데이터를 가져와서 세팅하는 과정에서 비로그인 유저와
+                  조건이 충돌이 나는 부분이 있어서 생기는 오류였습니다.
+                </span>
+                <span>
+                  <span className="text-title/16px">해결방법</span>: 유저정보를
+                  확인하는 과정을 비로그인 유저와 조건을 구분하여 데이터를
+                  가져올 수 있게 조건을 수정하여 해결하였습니다.
+                </span>
+              </span>
+            </span>
+          </ol>
+
+          <ol className="flex justify-between">
+            <span className="w-[120px] text-title/20px text-end whitespace-nowrap">
               배포 링크:
             </span>
             <span className="w-[500px]">
@@ -82,7 +125,7 @@ const Porifo = () => {
             </span>
           </ol>
           <ol className="flex justify-between">
-            <span className="w-[120px] text-end whitespace-nowrap">
+            <span className="w-[120px] text-title/20px text-end whitespace-nowrap">
               Github 링크:
             </span>
             <span className="w-[500px]">

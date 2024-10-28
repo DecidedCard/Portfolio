@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
+        "title/16px": ["16px", { lineHeight: "110%", fontWeight: "700" }],
+        "title/20px": ["20px", { lineHeight: "110%", fontWeight: "700" }],
         "title/24px": ["24px", { lineHeight: "110%", fontWeight: "700" }],
         "title/28px": ["28px", { lineHeight: "110%", fontWeight: "700" }],
         "title/32px": ["32px", { lineHeight: "110%", fontWeight: "700" }],
