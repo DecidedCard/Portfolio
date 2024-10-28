@@ -78,13 +78,13 @@ const GoodGame = () => {
               <span className="flex flex-col gap-1">
                 <span>
                   <span className="text-title/16px">문제</span>: query string을
-                  사용하여 url에 저장된 데이터를 가져오는 과정에서
-                  useSearchParams를 사용하였는데 build중에 오류가 발생했습니다.
+                  사용하여 URL에 저장된 데이터를 가져오는 과정에서
+                  useSearchParams를 사용하였는데 build 중에 오류가 발생했습니다.
                 </span>
                 <span>
                   <span className="text-title/16px">문제 원인</span>: next에서
                   useSearchParams를 사용하면 사용한 부분을 Suspense로 감싸서
-                  사용해야 된다고 공식문서에 나와있다는 것을 알게 되었습니다.
+                  사용해야 된다고 공식 문서에 나와 있다는 것을 알게 되었습니다.
                 </span>
                 <span>
                   <span className="text-title/16px">해결 방법</span>: 기존에
@@ -95,18 +95,18 @@ const GoodGame = () => {
               <span className="flex flex-col gap-1">
                 <span>
                   <span className="text-title/16px">문제</span>:
-                  react-hook-form을 사용하여 공통 컴포넌트를 사용할려고 했는데
+                  react-hook-form을 사용하여 공통 컴포넌트를 사용하려고 했는데
                   type을 any로 설정한게 typescript를 사용하는 목적이랑 어긋나는
-                  거 같아 any를 변경하려던 중 unkown이나 react-hook-form에 있는
-                  FieldValues를 사용할려고 했지만 작성한 커스텀 타입이 적용되지
+                  거 같아 any를 변경하려던 중 react-hook-form에 있는
+                  FieldValues를 사용하려고 했지만 작성한 커스텀 타입이 적용되지
                   않아 오류가 발생하였습니다.
                 </span>
                 <span>
                   <span className="text-title/16px">문제 원인</span>:
-                  UseFormRegister의 제네릭으로 FieldValues를 사용하여 type문제는
-                  해결하는 듯 싶었지만 커스텀 타입으로 지정된 register를 props로
-                  집어넣게 되면 FieldValues와 type 불일치가 일어나 오류가
-                  발생하였습니다.
+                  UseFormRegister의 제네릭으로 FieldValues를 사용하여 type
+                  문제는 해결하는 듯 싶었지만 커스텀 타입으로 지정된 register를
+                  props로 집어넣게 되면 FieldValues와 type 불일치가 일어나
+                  오류가 발생하였습니다.
                 </span>
                 <span>
                   <span className="text-title/16px">해결 방법</span>: 제네릭을

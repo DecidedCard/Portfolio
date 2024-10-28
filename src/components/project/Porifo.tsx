@@ -80,31 +80,31 @@ const Porifo = () => {
                   발생하였습니다.
                 </span>
                 <span>
-                  <span className="text-title/16px">문제원인</span>: 도메인
-                  설정을 해줘야 하는데 처음 이용하는 서비스라 정확히 어떤걸
-                  해줘야 하는지 파악하지 못 해 발생한 문제였습니다.
+                  <span className="text-title/16px">문제 원인</span>: 도메인
+                  설정을 해줘야 하는 데 처음 이용하는 서비스라 정확히 어떤 걸
+                  해줘야 하는지 파악하지 못해 발생한 문제였습니다.
                 </span>
                 <span>
-                  <span className="text-title/16px">해결방법</span>: resend에서
-                  알려주는 세팅을 해서 인증을 할 수 있게 되었습니다..
+                  <span className="text-title/16px">해결 방법</span>: resend에서
+                  알려주는 세팅을 해서 인증을 할 수 있게 되었습니다.
                 </span>
               </span>
               <span className="flex flex-col gap-1">
                 <span>
                   <span className="text-title/16px">문제</span>: 작성한 데이터를
                   가져와서 수정하는 과정에서 데이터를 가져오고 데이터가 있으면
-                  그걸로 값을 세팅하는 과정에서 무한렌더링이 걸리는 오류가
+                  그걸로 값을 세팅하는 과정에서 무한 렌더링이 걸리는 오류가
                   발생했습니다.
                 </span>
                 <span>
-                  <span className="text-title/16px">문제원인</span>: 유저 정보를
-                  기반으로 데이터를 가져와서 세팅하는 과정에서 비로그인 유저와
-                  조건이 충돌이 나는 부분이 있어서 생기는 오류였습니다.
+                  <span className="text-title/16px">문제 원인</span>: 유저
+                  정보를 기반으로 데이터를 가져와서 세팅하는 과정에서 비로그인
+                  유저와 조건이 충돌이 나는 부분이 있어서 생기는 오류였습니다.
                 </span>
                 <span>
-                  <span className="text-title/16px">해결방법</span>: 유저정보를
-                  확인하는 과정을 비로그인 유저와 조건을 구분하여 데이터를
-                  가져올 수 있게 조건을 수정하여 해결하였습니다.
+                  <span className="text-title/16px">해결 방법</span>: 유저
+                  정보를 확인하는 과정을 비로그인 유저와 조건을 구분하여
+                  데이터를 가져올 수 있게 조건을 수정하여 해결하였습니다.
                 </span>
               </span>
             </span>
