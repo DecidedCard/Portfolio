@@ -35,8 +35,8 @@ const GoodGame = () => {
               프로젝트 소개:
             </span>
             <span className="w-[500px]">
-              porifo는 템플릿 기반으로 이력서를 작성 및 수정할 수 있고, 공유하여
-              유저들끼리 피드백을 받을 수 있는 사이트 입니다.
+              GG는 게임 캐릭터의 랭킹을 확인할 수 있고 캐릭터를 검색하여
+              캐릭터의 상세정보를 확인할 수 있는 페이지입니다.
             </span>
           </ol>
           <ol className="flex justify-between">
