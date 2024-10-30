@@ -33,7 +33,7 @@ const MarkdownModal = ({
         onClick={onClickIsModalToggleHandler}
         className="absolute top-4 left-4 w-10 h-10 cursor-pointer"
       />
-      <div ref={modalRef}>
+      <div ref={modalRef} className="p-4 bg-white rounded-lg">
         <MDEditor.Markdown
           source={markdown}
           className="p-3 w-[1100px] h-[800px] overflow-scroll rounded-md"
