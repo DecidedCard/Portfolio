@@ -6,25 +6,9 @@ import MarkdownModal from "../modal/MarkdownModal";
 
 import useModalToggle from "@/hooks/useModalToggle";
 
-import type { StaticImageData } from "next/image";
+import type { ProjectCardProps } from "@/types/Props";
 
-interface Project {
-  name: string;
-  date: string;
-  introduce: string;
-  skill: string;
-  team: string;
-  function: string[];
-  trouble: { trouble: string; cause: string; solve: string }[];
-  link: { github: string; deploy: string };
-}
-
-interface Props {
-  images: StaticImageData[];
-  markDownItem: string;
-  project: Project;
-}
-const ProjectCard = ({ images, markDownItem, project }: Props) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
   const { isModal, onClickIsModalToggleHandler } = useModalToggle();
 
   return (
@@ -36,7 +20,7 @@ const ProjectCard = ({ images, markDownItem, project }: Props) => {
       <hr className="border-black" />
       <div className="relative flex gap-5">
         <div className="flex my-auto w-[400px] h-[500px]">
-          <Slider images={images} />
+          <Slider images={project.images} />
         </div>
         <hr className="my-auto w-[1px] h-[800px] border-0 bg-black" />
         <div className="flex flex-col gap-3 text-body/18px w-full">
@@ -129,7 +113,7 @@ const ProjectCard = ({ images, markDownItem, project }: Props) => {
       </div>
       {isModal && (
         <MarkdownModal
-          markdown={markDownItem}
+          markdown={project.markDown}
           isModal={isModal}
           onClickIsModalToggleHandler={onClickIsModalToggleHandler}
         />
