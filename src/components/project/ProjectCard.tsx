@@ -6,9 +6,9 @@ import MarkdownModal from "../modal/MarkdownModal";
 
 import useModalToggle from "@/hooks/useModalToggle";
 
-import type { ProjectCardProps } from "@/types/Props";
+import type { Project } from "@/types";
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project }: { project: Project }) => {
   const { isModal, onClickIsModalToggleHandler } = useModalToggle();
 
   return (
