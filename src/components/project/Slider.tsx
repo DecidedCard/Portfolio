@@ -25,7 +25,7 @@ const Slider = ({ images }: { images: StaticImageData[] }) => {
   };
 
   return (
-    <div className="flex flex-col gap-20 my-auto items-center h-fit">
+    <div className="flex flex-col gap-4 my-auto items-center h-fit">
       <div className="relative w-full overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"

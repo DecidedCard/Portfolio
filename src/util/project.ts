@@ -23,9 +23,9 @@ const ProjectArr: Project[] = [
       "Next.js, TypeScript, tailwindcss, zustand, Tanstack Query, supabase",
     team: "프론트엔드: 4명, 디자인: 1명",
     function: [
-      "- Supabase를 사용하여 Oauth 및 이메일 로그인/회원가입 구현",
-      "- 이력서 작성 및 수정할 수 있는 작성 페이지 구현",
-      "- 이력서 공유시 피드백을 받고 공유한 것을 확인할 수 있는 커뮤니티 페이지 구현",
+      "Supabase를 사용하여 Oauth 및 이메일 로그인/회원가입 구현",
+      "이력서 작성 및 수정할 수 있는 작성 페이지 구현",
+      "이력서 공유시 피드백을 받고 공유한 것을 확인할 수 있는 커뮤니티 페이지 구현",
     ],
     trouble: [
       {
@@ -60,10 +60,10 @@ const ProjectArr: Project[] = [
     skill: "Next.js, TypeScript, tailwindcss, zustand, Tanstack Query",
     team: "개인 프로젝트",
     function: [
-      "- 넥슨 오픈 API를 이용하여 메이플스토리라는 게임의 데이터를 가져와서 구현",
-      "- 랭킹 정보를 가져와서 랭킹을 확인할 수 있는 페이지 구현",
-      "- 캐릭터를 검색하여 캐릭터의 스탯 및 아이템 등을 확인할 수 있는 페이지 구현",
-      "- 모바일 환경을 고려하여 반응형 디자인 구현",
+      "넥슨 오픈 API를 이용하여 메이플스토리라는 게임의 데이터를 가져와서 구현",
+      "랭킹 정보를 가져와서 랭킹을 확인할 수 있는 페이지 구현",
+      "캐릭터를 검색하여 캐릭터의 스탯 및 아이템 등을 확인할 수 있는 페이지 구현",
+      "모바일 환경을 고려하여 반응형 디자인 구현",
     ],
     trouble: [
       {
