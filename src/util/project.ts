@@ -153,14 +153,136 @@ export default page;
         trouble: {
           comment:
             "react-hook-form을 사용하여 공통 컴포넌트를 사용하려고 했는데 type을 any로 설정한게 typescript를 사용하는 목적이랑 어긋나는 거 같아 any를 변경하려던 중 react-hook-form에 있는 FieldValues를 사용하려고 했지만 작성한 커스텀 타입이 적용되지 않아 오류가 발생하였습니다.",
+          markDown: `
+## 사용했던 방법
+
+\`\`\`tsx
+// type
+
+import type { UseFormRegister } from "react-hook-form";
+
+export interface InputProps{
+  size?: "big" | "small";
+  type?: "text" | "password";
+  placeholder?: string;
+  register: UseFormRegister<any>; // 이 부분에서 type any라는 에러메시지가 떴습니다. 이걸 수정할려고 했습니다.
+  value: string;
+}
+
+// Input.tsx
+import React from "react";
+
+import type { InputProps } from "@/types/commonProps";
+import type { FieldValues, Path } from "react-hook-form";
+
+const Input = <T extends FieldValues>({
+  size,
+  type,
+  placeholder,
+  register,
+  value,
+}: InputProps<T>) => {
+  const height =
+    (size === "big" && "h-14 text-body/22px") ||
+    (size === "small" && "h-10 text-body/18px") ||
+    "h-10 text-body/18px";
+
+  const inputType =
+    (type === "text" && "text") ||
+    (type === "password" && "password") ||
+    "text";
+
+  return (
+    <input
+      type={inputType}
+      placeholder={placeholder || ""}
+      {...register(value}
+      autoComplete="off"
+    />
+  );
+};
+
+export default Input;
+\`\`\`
+
+            `,
         },
         cause: {
           comment:
             "UseFormRegister의 제네릭으로 FieldValues를 사용하여 type 문제는 해결하는 듯 싶었지만 커스텀 타입으로 지정된 register를 props로 집어넣게 되면 FieldValues와 type 불일치가 일어나 오류가 발생하였습니다.",
+          markDown: `
+## 변경했지만 새로 발생한 문제
+\`\`\`tsx
+import type { UseFormRegister, FieldValues } from "react-hook-form";
+
+export interface InputProps {
+  size?: "big" | "small";
+  type?: "text" | "password";
+  placeholder?: string;
+  register: UseFormRegister<FieldValues>;
+  value: string;
+}
+
+\`\`\`
+
+타입을 저렇게 변경하였었습니다.
+            `,
         },
         solve: {
           comment:
             "제네릭을 사용하여 커스텀 타입을 적용할 수 있도록 변경하여 문제를 해결하였습니다.",
+          markDown: `
+## 해결한 방법
+\`\`\`tsx
+// type을 제네릭을 활용하여 변경
+import type { UseFormRegister, FieldValues } from "react-hook-form";
+
+export interface InputProps<T extends FieldValues> {
+  size?: "big" | "small";
+  type?: "text" | "password";
+  placeholder?: string;
+  register: UseFormRegister<T>;
+  value: string;
+}
+
+// Input.tsx
+import React from "react";
+
+import type { InputProps } from "@/types/commonProps";
+import type { FieldValues, Path } from "react-hook-form";
+
+const Input = <T extends FieldValues>({
+  size,
+  type,
+  placeholder,
+  register,
+  value,
+}: InputProps<T>) => {
+  const height =
+    (size === "big" && "h-14 text-body/22px") ||
+    (size === "small" && "h-10 text-body/18px") ||
+    "h-10 text-body/18px";
+
+  const inputType =
+    (type === "text" && "text") ||
+    (type === "password" && "password") ||
+    "text";
+
+  return (
+    <input
+      type={inputType}
+      placeholder={placeholder || ""}
+      {...register(value as Path<T>)}
+      autoComplete="off"
+    />
+  );
+};
+
+export default Input;
+
+
+\`\`\`
+            `,
         },
       },
     ],
