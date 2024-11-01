@@ -126,7 +126,7 @@ const ProjectModal = ({
           </div>
         </div>
         <div className="p-3">
-          <p className="text-title/20px">트러블 슈팅</p>
+          <p className="text-title/20px">Link</p>
           <div className="flex flex-col gap-1 px-4">
             <li>
               <label className="text-title/16px">Github link: </label>
