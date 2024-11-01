@@ -59,6 +59,29 @@ const ProjectArr: Project[] = [
         solve: {
           comment:
             "유저 정보를 확인하는 과정을 비로그인 유저와 조건을 구분하여 데이터를 가져올 수 있게 조건을 수정하여 해결하였습니다.",
+          markDown: `
+## 작성한 코드
+\`\`\`ts
+    useEffect(() => {
+        if (portfolioData && portfolioData?.length !== 0) {
+          // 조건에 맞는 로직
+        }
+        if (user && !portfolio) {
+          // 조건에 맞는 로직
+        }
+
+        // 유저 정보가 없을경우 로컬스토리지에 저장한 데이터를 체크하여 가져오게 하는 로직입니다.(비로그인 유저 구별)
+        // 유저 정보를 체크하는 과정에서 스토어와 조건이 충돌이 일어나서 무한렌더링이 발생하였습니다.
+        const localStorageItem = JSON.parse(localStorage.getItem("portfolio")!) as PortfolioInfo;
+        if (localStorageItem) {
+            localStorageItemRef.current = localStorageItem;
+        }
+        if (localStorageItemRef.current && !portfolio) {
+        // 조건에 맞는 로직
+        }
+    }, [의존성 배열 필요한 변수]);
+\`\`\`
+        `,
         },
       },
     ],
