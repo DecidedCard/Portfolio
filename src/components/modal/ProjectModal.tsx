@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 import MDEditor from "@uiw/react-md-editor";
 import { IoClose } from "react-icons/io5";
@@ -9,7 +11,6 @@ import useScrollStop from "@/hooks/useScrollStop";
 import useModalClose from "@/hooks/useModalClose";
 
 import type { Project } from "@/types";
-import Link from "next/link";
 
 type Props = {
   project: Project;
@@ -68,6 +69,15 @@ const ProjectModal = ({
                       className="p-3 rounded-lg"
                     />
                   )}
+                  {item.trouble.image && (
+                    <Image
+                      src={item.trouble.image}
+                      alt=""
+                      width={400}
+                      height={400}
+                      className="mx-auto w-3/5 h-auto"
+                    />
+                  )}
                 </li>
                 <li className="flex flex-col gap-1">
                   <div>
@@ -80,6 +90,15 @@ const ProjectModal = ({
                       className="p-3 rounded-lg"
                     />
                   )}
+                  {item.cause.image && (
+                    <Image
+                      src={item.cause.image}
+                      alt=""
+                      width={400}
+                      height={400}
+                      className="mx-auto w-3/5 h-auto"
+                    />
+                  )}
                 </li>
                 <li className="flex flex-col gap-1">
                   <div>
@@ -90,6 +109,15 @@ const ProjectModal = ({
                     <MDEditor.Markdown
                       source={item.solve.markDown}
                       className="p-3 rounded-lg"
+                    />
+                  )}
+                  {item.solve.image && (
+                    <Image
+                      src={item.solve.image}
+                      alt=""
+                      width={400}
+                      height={400}
+                      className="mx-auto w-3/5 h-auto"
                     />
                   )}
                 </li>

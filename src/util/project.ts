@@ -3,6 +3,7 @@ import { Project } from "@/types";
 import porifo1 from "@/../public/assets/projectImage/porifo1.png";
 import porifo2 from "@/../public/assets/projectImage/porifo2.png";
 import porifo3 from "@/../public/assets/projectImage/porifo3.png";
+import resend from "@/../public/assets/projectImage/resend setting.png";
 import { porifoMD } from "./project-readMe/porifo";
 
 import GGImage1 from "@/../public/assets/projectImage/GG_main_page.png";
@@ -43,6 +44,7 @@ const ProjectArr: Project[] = [
         solve: {
           comment:
             "resend에서 알려주는 세팅을 해서 인증을 할 수 있게 되었습니다.",
+          image: resend,
         },
       },
       {
