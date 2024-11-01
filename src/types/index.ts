@@ -7,8 +7,14 @@ export interface Project {
   introduce: string;
   skill: string;
   team: string;
-  function: string[];
-  trouble: { trouble: string; cause: string; solve: string }[];
+  function: Comment[];
+  trouble: { trouble: Comment; cause: Comment; solve: Comment }[];
   link: { github: string; deploy: string };
   markDown: string;
+}
+
+interface Comment {
+  comment: string;
+  image?: StaticImageData;
+  markDown?: string;
 }

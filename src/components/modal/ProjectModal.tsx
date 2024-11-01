@@ -48,26 +48,50 @@ const ProjectModal = ({
           <p className="text-title/20px">기능</p>
           <div className="px-4">
             {project.function.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item.comment}>{item.comment}</li>
             ))}
           </div>
         </div>
         <div className="p-3">
           <p className="text-title/20px">트러블 슈팅</p>
-          <div className="flex flex-col gap-1 px-4">
+          <div className="flex flex-col gap-4 px-4">
             {project.trouble.map((item) => (
-              <ol key={item.trouble}>
-                <li>
-                  <label className="text-title/16px">문제: </label>
-                  {item.trouble}
+              <ol key={item.trouble.comment} className="flex flex-col gap-3">
+                <li className="flex flex-col gap-1">
+                  <div>
+                    <label className="text-title/16px">문제: </label>
+                    {item.trouble.comment}
+                  </div>
+                  {item.trouble.markDown && (
+                    <MDEditor.Markdown
+                      source={item.trouble.markDown}
+                      className="p-3 rounded-lg"
+                    />
+                  )}
                 </li>
-                <li>
-                  <label className="text-title/16px">원인: </label>
-                  {item.cause}
+                <li className="flex flex-col gap-1">
+                  <div>
+                    <label className="text-title/16px">원인: </label>
+                    {item.cause.comment}
+                  </div>
+                  {item.cause.markDown && (
+                    <MDEditor.Markdown
+                      source={item.cause.markDown}
+                      className="p-3 rounded-lg"
+                    />
+                  )}
                 </li>
-                <li>
-                  <label className="text-title/16px">해결: </label>
-                  {item.solve}
+                <li className="flex flex-col gap-1">
+                  <div>
+                    <label className="text-title/16px">해결: </label>
+                    {item.solve.comment}
+                  </div>
+                  {item.solve.markDown && (
+                    <MDEditor.Markdown
+                      source={item.solve.markDown}
+                      className="p-3 rounded-lg"
+                    />
+                  )}
                 </li>
               </ol>
             ))}
